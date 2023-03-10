@@ -14,3 +14,4 @@ class Ad(models.Model):
     is_published = models.BooleanField()
     category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='ads/', null=True, blank=True)
+
