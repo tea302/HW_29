@@ -27,3 +27,4 @@ class User(models.Model):
     role = models.CharField(max_length=200, choices=Roles.choices)
     age = models.PositiveIntegerField()
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
+
